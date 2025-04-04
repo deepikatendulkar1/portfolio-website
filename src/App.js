@@ -6,7 +6,7 @@ function App() {
       {/* Navbar */}
       <header className="fixed top-0 w-full bg-white shadow z-50">
         <nav className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-          <h1 className="text-xl font-bold text-blue-600">Your Name</h1>
+          <h1 className="text-xl font-bold text-blue-600">DEEPIKA TENDULKAR</h1>
           <ul className="flex gap-6 text-sm font-medium">
             <li><a href="#about" className="hover:text-blue-600">About</a></li>
             <li><a href="#projects" className="hover:text-blue-600">Projects</a></li>
@@ -20,14 +20,16 @@ function App() {
         {/* Hero Section */}
         <section className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-br from-blue-50 to-white px-6 text-center">
           <h1 className="text-5xl md:text-6xl font-extrabold mb-4 leading-tight">
-            Hi, I'm <span className="text-blue-600">Your Name</span>
+            Hi, I'm <span className="text-blue-600">DEEPIKA </span>
           </h1>
-          <p className="text-lg md:text-xl text-gray-600 max-w-2xl mb-6">
-            I build modern, scalable applications using React, .NET, Python, and Data Science.
+          <p className="text-lg  text-gray-600 max-w-2xl mb-6">
+          Software Engineer with expertise in full-stack development, cloud computing, and DevOps. Skilled in ASP.NET, Angular, React.js,
+and microservices, with a passion for building scalable solutions and optimizing system performance. STEM OPT eligible, eager to
+tackle dynamic challenges and drive innovation.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a
-              href="/resume.pdf"
+              href="/Resume.docx"
               className="bg-blue-600 text-white px-6 py-3 rounded-xl shadow hover:bg-blue-700 transition"
             >
               Download Resume
