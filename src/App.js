@@ -35,7 +35,7 @@ function App() {
     </p>
     <div className="flex flex-col sm:flex-row justify-center gap-4">
       <a
-        href="resume.pdf"
+        href={`${process.env.PUBLIC_URL}/Resume.pdf`}
         download
         className="bg-blue-600 text-white px-6 py-3 rounded-xl shadow hover:bg-blue-700 transition"
       >
