@@ -29,7 +29,7 @@ tackle dynamic challenges and drive innovation.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a
-              href="/Resume.docx"
+              href="Resume.pdf" download target="_blank" rel="noopener noreferrer"
               className="bg-blue-600 text-white px-6 py-3 rounded-xl shadow hover:bg-blue-700 transition"
             >
               Download Resume
