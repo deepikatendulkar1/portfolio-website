@@ -18,40 +18,44 @@ function App() {
       </header>
 
       {/* Content Wrapper */}
-      <div className="pt-24">
         {/* Hero */}
-        <section
-          className="min-h-screen flex flex-col justify-center items-center px-6 text-center bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage: `url(${process.env.PUBLIC_URL + '/bg1.jpg'})`,
-            backgroundColor: 'rgba(255, 255, 255, 0.85)',
-            backgroundBlendMode: 'lighten'
-          }}
-        >
-          <h1 className="text-5xl md:text-6xl font-extrabold mb-4 leading-tight text-gray-900">
-            Hi, I'm <span className="text-blue-600">DEEPIKA</span>
-          </h1>
-          <p className="text-lg text-gray-700 max-w-2xl mb-6">
-            Software Engineer with expertise in full-stack development, cloud computing, and DevOps. Skilled in ASP.NET, Angular, React.js, and microservices, with a passion for building scalable solutions and optimizing system performance.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4">
-            <a
-              href="Resume.pdf"
-              download
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-blue-600 text-white px-6 py-3 rounded-xl shadow hover:bg-blue-700 transition"
-            >
-              Download Resume
-            </a>
-            <a
-              href="#projects"
-              className="border-2 border-blue-600 text-blue-600 px-6 py-3 rounded-xl hover:bg-blue-50 transition"
-            >
-              View Projects
-            </a>
-          </div>
-        </section>
+        <section className="relative min-h-screen flex flex-col justify-center items-center bg-gradient-to-br from-blue-50 via-white to-blue-100 px-6 text-center overflow-hidden">
+  
+  {/* Background Circle Blobs */}
+  <div className="absolute top-[-50px] left-[-50px] w-72 h-72 bg-blue-300 opacity-30 rounded-full blur-3xl z-0 animate-pulse"></div>
+  <div className="absolute bottom-[-60px] right-[-40px] w-96 h-96 bg-purple-300 opacity-20 rounded-full blur-2xl z-0 animate-pulse"></div>
+
+  {/* Main Content */}
+  <div className="z-10">
+    <h1 className="text-5xl md:text-6xl font-extrabold mb-6 leading-tight text-gray-800">
+      Hi, I'm <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Deepika Tendulkar</span>
+    </h1>
+    <p className="text-lg text-gray-700 max-w-2xl mx-auto mb-8">
+      Software Engineer with expertise in full-stack development, cloud, and DevOps — building scalable solutions with .NET, Angular, React, and microservices.
+    </p>
+    <div className="flex flex-col sm:flex-row justify-center gap-4">
+      <a
+        href="resume.pdf"
+        download
+        className="bg-blue-600 text-white px-6 py-3 rounded-xl shadow hover:bg-blue-700 transition"
+      >
+        Download Resume
+      </a>
+      <a
+        href="#projects"
+        className="border-2 border-blue-600 text-blue-600 px-6 py-3 rounded-xl hover:bg-blue-50 transition"
+      >
+        View Projects
+      </a>
+    </div>
+  </div>
+
+  {/* Scroll Down Indicator */}
+  <div className="absolute bottom-8 text-gray-500 text-sm animate-bounce z-10">
+    ↓ scroll to explore
+  </div>
+</section>
+
 
         {/* Carousel 
         <section className="py-20 px-6 bg-white text-center">
@@ -265,7 +269,7 @@ function App() {
             &copy; {new Date().getFullYear()} Deepika Tendulkar. All rights reserved.
           </p>
         </footer>
-      </div>
+
     </div>
   );
 }
