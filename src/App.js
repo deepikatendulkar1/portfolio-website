@@ -36,7 +36,7 @@ function App() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <a
-              href="resume.pdf"
+              href="Resume.pdf"
               download
               target="_blank"
               rel="noopener noreferrer"
